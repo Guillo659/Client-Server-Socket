@@ -4,7 +4,6 @@ jobs:
       runs-on: ubuntu-latest
       container: node:16
       steps:
-        - run: ifconfig
         - run: node --version
         - uses: actions/checkout@v3
         - run: node server.js 8000
